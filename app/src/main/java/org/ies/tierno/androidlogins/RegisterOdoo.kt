@@ -26,6 +26,7 @@ import androidx.compose.material.icons.filled.TextFields
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
@@ -38,6 +39,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
@@ -274,7 +276,9 @@ fun RegisterOdooContent() {
                         bio = ""
                         passwordVisible = false
                         repeatPasswordVisible = false
-                    }
+                    },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF714B67))
                 ) {
 
                     Text("Limpiar")
@@ -285,7 +289,11 @@ fun RegisterOdooContent() {
                 }
                 Spacer(modifier = Modifier.width(30.dp))
 
-                Button(onClick = { /* Acción */ }) {
+                Button(onClick = { /* Acción */ },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF714B67))
+
+                ) {
                     Text("Aceptar")
                     Icon(
                         imageVector = Icons.Default.Check,
