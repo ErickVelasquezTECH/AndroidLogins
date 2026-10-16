@@ -166,6 +166,15 @@ fun RegisterOdooContent() {
                     IconButton(onClick = { repeatPasswordVisible = !repeatPasswordVisible }) {
                         Icon(imageVector = image, contentDescription = null)
                     }
+                },
+                isError = repeatPassword.isNotEmpty() &&
+                        repeatPassword != password,
+                supportingText = {
+                    if (repeatPassword.isNotEmpty() &&
+                        repeatPassword != password
+                    ) {
+                        Text("Las contraseñas no coinciden")
+                    }
                 }
             )
             Spacer(modifier = Modifier.height(10.dp))
