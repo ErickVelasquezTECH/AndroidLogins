@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidLogins</string>
     <string name="title_activity_login_odoo">LoginOdoo</string>
+    <string name="title_activity_register_odoo">RegisterOdoo</string>
 </resources>

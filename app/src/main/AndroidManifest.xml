@@ -29,6 +29,12 @@
             android:label="@string/title_activity_login_odoo"
             android:theme="@style/Theme.AndroidLogins"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegisterOdoo"
+            android:exported="false"
+            android:label="@string/title_activity_register_odoo"
+            android:theme="@style/Theme.AndroidLogins"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
